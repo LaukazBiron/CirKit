@@ -1,0 +1,3 @@
+# Requisitos del proyecto (si usas librerías externas)
+numpy
+matplotlib
