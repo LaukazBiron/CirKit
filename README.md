@@ -3,7 +3,8 @@
 
 ## Descripción del Proyecto
 **CirKit** es una aplicación desarrollada en Python que permite realizar cálculos fundamentales en circuitos eléctricos.
-Este proyecto fue desarrollado como parte del curso de Administración de Proyectos y sirve como herramienta educativa para el análisis de circuitos básicos.
+Este proyecto fue desarrollado como parte del curso de Administración de Proyectos y sirve como herramienta educativa para
+el análisis de circuitos básicos.
 
 ## Características Principales
 - **Ley de Ohm** - Cálculo de voltaje, corriente y resistencia
@@ -22,12 +23,10 @@ Este proyecto fue desarrollado como parte del curso de Administración de Proyec
    ```bash
    git clone https://github.com/LaukazBiron/CirKit.git
    cd CirKit
-   ```
-
 2. **Instalar dependencias:**
    ```bash
    pip install -r requirements.txt
-   ```
+
 
 3. **Ejecutar la aplicación:**
    ```bash
@@ -165,7 +164,7 @@ Si encuentra algún error o tiene sugerencias de mejora:
 4. Especifique su entorno de trabajo
 
 ## Tecnologías Utilizadas
-- **Lenguaje de Programación**: Python 3.8+
+- **Lenguaje de Programación**: Python 3.13.7+
 - **Interfaz Gráfica**: Tkinter y Kivy
 - **Control de Versiones**: Git
 - **Plataforma de Colaboración**: GitHub
@@ -174,15 +173,12 @@ Si encuentra algún error o tiene sugerencias de mejora:
 ## Licencia
 Este proyecto está bajo la Licencia MIT. Consulte el archivo [LICENSE](LICENSE) para más detalles.
 
----
-
 ## Estado Actual del Proyecto
 **En Desarrollo** - Versión funcional básica completada
 
+**Proyecto Académico** - Curso de Administración de Proyectos 
 
----
+**Institución**: - Benemérita Universidad Autónoma de Puebla
 
-**Proyecto Académico** - Curso de Administración de Proyectos  
-**Institución**: Benemérita Universidad Autónoma de Puebla
 **Fecha de Entrega**: 17/21 de Noviembre de 2025
 ```
