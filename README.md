@@ -2,7 +2,8 @@
 # CirKit - Simulador de Circuitos Eléctricos
 
 ## Descripción del Proyecto
-**CirKit** es una aplicación desarrollada en Python que permite realizar cálculos fundamentales en circuitos eléctricos. Este proyecto fue desarrollado como parte del curso de Administración de Proyectos y sirve como herramienta educativa para el análisis de circuitos básicos.
+**CirKit** es una aplicación desarrollada en Python que permite realizar cálculos fundamentales en circuitos eléctricos.
+Este proyecto fue desarrollado como parte del curso de Administración de Proyectos y sirve como herramienta educativa para el análisis de circuitos básicos.
 
 ## Características Principales
 - **Ley de Ohm** - Cálculo de voltaje, corriente y resistencia
