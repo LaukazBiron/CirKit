@@ -69,7 +69,7 @@ calculadora-circuitos/
 ├── interfaz_kivy.py          # Interfaz gráfica con Kivy
 ├── logica_circuitos.py       # Lógica de cálculos y funciones
 ├── requirements.txt          # Dependencias del proyecto
-└── .gitignore               # Archivos ignorados por Git
+└── .gitignore                # Archivos ignorados por Git
 ```
 
 ## Gestión de Ramas
