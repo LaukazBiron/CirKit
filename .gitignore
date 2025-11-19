@@ -1,3 +1,28 @@
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Archivos de construcción
+build/
+dist/
+__pycache__/
+*.pyc
+*.pyo
+
+# Archivos de IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+sim-elec.log
+
+# Archivos temporales
+*.spec
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
