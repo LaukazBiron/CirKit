@@ -1,0 +1,200 @@
+#:import dp kivy.metrics.dp
+
+<Contenedor_01>:
+    id: root_box
+    orientation: 'vertical'
+    spacing: 0
+
+    # --------- TOP BAR ----------
+    BoxLayout:
+        size_hint_y: None
+        height: dp(56)
+        padding: dp(12), dp(8)
+        spacing: dp(8)
+        canvas.before:
+            Color:
+                rgba: 0.13, 0.47, 0.98, 1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+        # Logo a la izquierda (el único ícono que queda)
+        Image:
+            source: 'icons/app_icon.png'
+            size_hint_x: None
+            width: dp(28)
+
+        # Título
+        Label:
+            text: "CirKit - Simulador de Circuitos"
+            color: 1, 1, 1, 1
+            bold: True
+            font_size: '18sp'
+            halign: 'left'
+            valign: 'middle'
+            text_size: self.size
+
+        # Acciones principales (texto plano)
+        BoxLayout:
+            spacing: dp(8)
+            size_hint_x: None
+            width: self.minimum_width
+            Button:
+                text: "Abrir"
+                size_hint_x: None
+                width: dp(110)
+                on_release: app.prompt_open()
+            Button:
+                text: "Guardar"
+                size_hint_x: None
+                width: dp(110)
+                on_release: app.prompt_save()
+            Button:
+                text: "Simular"
+                size_hint_x: None
+                width: dp(110)
+                on_release: canvas_area.simulate_from_canvas()
+            Button:
+                text: "Exportar PDF"
+                size_hint_x: None
+                width: dp(130)
+                on_release: canvas_area.export_pdf_from_canvas()
+            Button:
+                text: "Tutorial"
+                size_hint_x: None
+                width: dp(110)
+                on_release: app.open_tutorial_popup()
+
+    # --------- TOOLBAR ----------
+    BoxLayout:
+        size_hint_y: None
+        height: dp(50)
+        spacing: dp(8)
+        padding: dp(8), dp(6)
+        canvas.before:
+            Color:
+                rgba: 0.05, 0.05, 0.05, 1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+        Button:
+            text: "Seleccionar"
+            on_release: canvas_area.set_mode('select')
+        Button:
+            text: "Resistor (R)"
+            on_release: canvas_area.set_mode('add_R')
+        Button:
+            text: "Fuente (V)"
+            on_release: canvas_area.set_mode('add_V')
+        Button:
+            text: "Diodo (D)"
+            on_release: canvas_area.set_mode('add_D')
+        Button:
+            text: "Nodo (•)"
+            on_release: canvas_area.set_mode('add_J')
+        Button:
+            text: "Cable"
+            on_release: canvas_area.set_mode('wire')
+        Button:
+            text: "Tierra (GND)"
+            on_release: canvas_area.set_mode('set_gnd')
+        Button:
+            text: "Rotar"
+            on_release: canvas_area.rotate_selected()
+        Button:
+            text: "Eliminar"
+            on_release: canvas_area.delete_selected()
+
+    # --------- BODY ----------
+    BoxLayout:
+        spacing: 0
+
+        CircuitCanvas:
+            id: canvas_area
+
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint_x: None
+            width: dp(360)
+            padding: dp(10)
+            spacing: dp(10)
+            canvas.before:
+                Color:
+                    rgba: 0.11, 0.12, 0.14, 1
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+
+            Label:
+                text: "Inspector"
+                color: 0.8, 0.9, 1, 1
+                bold: True
+                font_size: '18sp'
+                size_hint_y: None
+                height: dp(28)
+
+            GridLayout:
+                cols: 2
+                row_default_height: dp(26)
+                size_hint_y: None
+                height: self.minimum_height
+
+                Label:
+                    text: "ID:"
+                    color: 0.9,0.9,0.9,1
+                Label:
+                    id: ins_name
+                    text: "-"
+                    color: 0.9,0.9,0.9,1
+
+                Label:
+                    text: "Valor:"
+                    color: 0.9,0.9,0.9,1
+                Label:
+                    id: ins_value
+                    text: "-"
+                    color: 0.9,0.9,0.9,1
+
+                Label:
+                    text: "Descripción:"
+                    color: 0.9,0.9,0.9,1
+                Label:
+                    id: ins_desc
+                    text: "-"
+                    color: 0.9,0.9,0.9,1
+
+            Label:
+                text: "Resultados"
+                color: 0.8, 0.9, 1, 1
+                bold: True
+                font_size: '16sp'
+                size_hint_y: None
+                height: dp(24)
+
+            Label:
+                id: lbl_info
+                text: "-"
+                markup: True
+                halign: 'left'
+                valign: 'top'
+                text_size: self.width, None
+
+    # --------- STATUS BAR ----------
+    BoxLayout:
+        size_hint_y: None
+        height: dp(24)
+        padding: dp(8), 0
+        canvas.before:
+            Color:
+                rgba: 0.06, 0.06, 0.06, 1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        Label:
+            id: status_label
+            text: "Listo."
+            color: 0.85, 0.9, 1, 1
+            font_size: '12sp'
+
+Contenedor_01:
