@@ -1,4 +1,3 @@
-```markdown
 # CirKit - Simulador de Circuitos Eléctricos
 
 ## Descripción del Proyecto
@@ -38,7 +37,7 @@ el análisis de circuitos básicos.
    
    # Versión con interfaz gráfica (Kivy)
    python interfaz_kivy.py
-   ```
+
 
 ## Instrucciones de Uso
 
