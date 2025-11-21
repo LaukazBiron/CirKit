@@ -5,6 +5,20 @@
 Este proyecto fue desarrollado como parte del curso de Administración de Proyectos y sirve como herramienta educativa para
 el análisis de circuitos básicos.
 
+## Tickets de Desarrollo
+
+Los tickets de desarrollo, reportes y documentación de gestión del proyecto se encuentran disponibles en:
+
+[ **Google Drive - Tickets CirKit**](https://drive.google.com/drive/folders/1HZJ2PmZ7-ktnPU2Zf6M1Hy08V1OaIT1N?usp=sharing)
+
+[ **Google Drive - Archivos CirKit**](https://drive.google.com/drive/folders/12xbc1GPgPfLWzSRPLRz0uxgrzHNEZMFv?usp=drive_link)
+
+### Contenido incluido:
+- 13 tickets de desarrollo con seguimiento completo
+- Reportes de progreso semanal
+- Documentación de reuniones y planificación
+- Capturas de evidencia del desarrollo
+
 ## Características Principales
 - **Ley de Ohm** - Cálculo de voltaje, corriente y resistencia
 - **Resistencias en serie y paralelo** - Combinación de múltiples resistencias
