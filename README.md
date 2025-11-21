@@ -25,40 +25,19 @@ Los tickets de desarrollo, reportes y documentación de gestión del proyecto se
 - **Potencia eléctrica** - Cálculo de potencia en circuitos
 - **Interfaz modular** - Separación entre lógica de negocio e interfaz de usuario
 
-## Instalación y Configuración
 
-### Requisitos del Sistema
-- Python 3.13.7 o superior
-- Git para control de versiones
+### Versión Ejecutable (Windows)
+[**Descargar CirKit v1.0**](https://github.com/LaukazBiron/CirKit/releases/tag/v1.0.0)
 
-### Instalación
-1. **Clonar el repositorio:**
-   ```bash
-   git clone https://github.com/LaukazBiron/CirKit.git
-   cd CirKit
-2. **Instalar dependencias:**
-   ```bash
-   pip install -r requirements.txt
+*Requisitos: Windows 10/11, no requiere instalación*
 
-
-3. **Ejecutar la aplicación:**
-   ```bash
-   # Versión de consola
-   python ejecutable.py
-   
-   # Versión con interfaz gráfica (Tkinter)
-   python interfaz_tkinter.py
-   
-   # Versión con interfaz gráfica (Kivy)
-   python interfaz_kivy.py
-
-
-## Instrucciones de Uso
-
-### Modo Consola
-Ejecute el archivo principal y seleccione una opción del menú:
+### Código Fuente
+Si prefieres ejecutar desde código fuente:
 ```bash
-python ejecutable.py
+git clone https://github.com/LaukazBiron/CirKit.git
+cd CirKit
+pip install -r requirements.txt
+python src/ui/kivy/app.py
 ```
 
 Opciones disponibles:
@@ -67,10 +46,7 @@ Opciones disponibles:
 3. Resistencias en paralelo
 4. Potencia eléctrica
 
-### Ejemplo de Cálculo
-```python
-# Añadir
-```
+
 
 ## Estructura del Proyecto
 ```
