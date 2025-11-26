@@ -167,6 +167,4 @@ Este proyecto está bajo la Licencia MIT. Consulte el archivo [LICENSE](LICENSE)
 
 **Proyecto Académico** - Curso de Administración de Proyectos 
 
-**Institución**: - Benemérita Universidad Autónoma de Puebla
-
 **Fecha de Entrega**: 17/21 de Noviembre de 2025
